@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        
+
             {
 
                 Console.Write("Введіть перший операнд: ");
@@ -47,24 +47,32 @@ namespace ConsoleApp1
 
             void Add(int operandOne, int operandTwo)
             {
-                
+                int result = operandOne + operandTwo;
+
+                Console.WriteLine($"Result of an addition operation is {result}");
             }
 
             void Sub(int operandOne, int operandTwo)
             {
-                
+                int result = operandOne - operandTwo;
+
+                Console.WriteLine($"Result of a substraction operation is {result}");
             }
 
             void Mul(int operandOne, int operandTwo)
             {
-                
+                int result = operandOne * operandTwo;
+
+                Console.WriteLine($"Result of a multiplication operation is {result}");
             }
 
             void Div(int operandOne, int operandTwo)
             {
-                
+                int result = operandOne / operandTwo;
+
+                Console.WriteLine($"Result of a division operation is {result}");
             }
         }
     }
-    
+
 }
