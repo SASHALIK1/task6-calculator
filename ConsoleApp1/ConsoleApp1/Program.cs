@@ -19,7 +19,7 @@ namespace ConsoleApp1
                 Console.Write("Введіть другий операнд: ");
                 int operandTwo = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Введіть операцію (+, -, *, /): ");
+                Console.Write("Введіть операцію (+, -, *, /, %): ");
                 char operation = Convert.ToChar(Console.ReadLine());
 
 
@@ -36,6 +36,9 @@ namespace ConsoleApp1
                         break;
                     case '/':
                         Div(operandOne, operandTwo);
+                        break;
+                    case '%':
+                        DivWithReminder(operandOne, operandTwo);
                         break;
                     default:
                         Console.WriteLine("Невірна операція. Введіть правильний знак (+, -, *, /).");
@@ -71,6 +74,12 @@ namespace ConsoleApp1
                 int result = operandOne / operandTwo;
 
                 Console.WriteLine($"Result of a division operation is {result}");
+            }
+            void DivWithReminder(int operandOne, int operandTwo)
+            {
+                int result = operandOne % operandTwo;
+
+                Console.WriteLine($"Result of a division with reminder operation is {result}");
             }
         }
     }
